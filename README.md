@@ -1,0 +1,2 @@
+# BloodBankApp
+This app has the authorisation i.e. it lets an admin log into the app only if valid credentials are entered. It maintains the blood stock in a blood bank and updates the stock after every transaction. It also allows to add a new blood group type if it wasn't available yet. Also it allows an existing Admin to add new Admins by generating a new combination of Admin ID and Password. The Admin ID is the unique key ( primary key ).
