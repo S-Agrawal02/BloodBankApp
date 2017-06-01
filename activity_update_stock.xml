@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.acer.bloodbankapp.UpdateStock"
+    android:background="#6d7185">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:id="@+id/imageView4"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/icon"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Blood Type"
+        android:id="@+id/inp_bt"
+        android:textStyle="bold"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignLeft="@+id/inp_am"
+        android:layout_alignStart="@+id/inp_am"
+        android:layout_marginTop="104dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/type"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/inp_bt"
+        android:layout_toRightOf="@+id/inp_am"
+        android:layout_toEndOf="@+id/inp_am"
+        android:layout_marginLeft="72dp"
+        android:layout_marginStart="72dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Amount(ml)"
+        android:id="@+id/inp_am"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/inp_bt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/amount"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/inp_am"
+        android:layout_alignLeft="@+id/type"
+        android:layout_alignStart="@+id/type" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DONATED"
+        android:id="@+id/btn_don"
+        android:textStyle="bold"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_above="@+id/imageView5"
+        android:layout_toLeftOf="@+id/btn_acc"
+        android:layout_toStartOf="@+id/btn_acc"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACCEPT"
+        android:id="@+id/btn_acc"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/btn_don"
+        android:layout_alignLeft="@+id/amount"
+        android:layout_alignStart="@+id/amount"
+        android:layout_alignRight="@+id/imageView4"
+        android:layout_alignEnd="@+id/imageView4" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/dim_foreground_disabled_material_light"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Someone Helped Or Need Help ?"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
